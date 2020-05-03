@@ -1,0 +1,72 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function Suma(primerValor, segundoValor) {
+            this.primerValor = primerValor;
+            this.segundoValor = segundoValor;
+            this.cargarValor1 = cargarValor1;
+            this.cargarValor2 = cargarValor2;
+            this.retornarResultado = retornarResultado;
+        }
+
+        function cargarValor1(primerValor) {
+            this.primerValor = primerValor;
+        }
+
+        function cargarValor2(segundoValor) {
+            this.segundoValor = segundoValor;
+        }
+
+        function retornarResultado() {
+
+            this.primerValor + this.segundoValor;
+        }
+
+        var s = new Suma();
+        s.cargarValor1(10);
+        s.cargarValor2(20);
+        document.write('La suma de los dos valores es:' + s.retornarResultado());
+    </script>
+
+
+</body>
+
+</html>-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pelotas</title>
+    <meta charset="UTF-8">
+</head>
+
+<body style="background-color: darkkhaki;">
+
+
+    <script>
+        var vec = [100, , 200, , 300];
+        document.write('Los precios de las pelotas son:<br>');
+        var f;
+        for (f = 0; f < vec.length; f++) {
+            document.write(vec[f] + '*');
+        }
+        document.write('<br>');
+        document.write('Los precios de las pelotas son:<br>');
+        for (var indice in vec) {
+            document.write(vec[indice] + '*');
+        }
+    </script>
+
+
+</body>
+
+</html>
